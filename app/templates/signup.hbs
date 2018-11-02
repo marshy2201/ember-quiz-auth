@@ -1,0 +1,31 @@
+<div class="row justify-content-center align-items-center">
+  <div class="col-md-5">
+    <div class="card text-white bg-dark">
+      <div class="card-body">
+        <form onsubmit={{action "signup"}}>
+          <div class="form-group">
+            <label for="email">First Name</label>
+            {{input value=firstName class="form-control"}}
+          </div>
+          <div class="form-group">
+            <label for="email">Last Name</label>
+            {{input value=lastName class="form-control"}}
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            {{input type="email" value=email class="form-control"}}
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            {{input type="password" value=password class="form-control"}}
+          </div>
+          <hr>
+          <div class="d-flex justify-content-between align-items-center">
+            <span>Already signed up? {{link-to "Login" "login"}}</span>
+            <button type="submit" class="btn btn-success">Sign Up</button>
+          </div>  
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

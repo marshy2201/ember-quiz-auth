@@ -1,0 +1,12 @@
+@import "ember-bootstrap/bootstrap";
+
+// General
+
+body,
+.container > .row {
+  min-height: 100vh;
+}
+
+hr {
+  background: #eee;
+}
