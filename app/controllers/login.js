@@ -9,7 +9,14 @@ export default Controller.extend({
       event.preventDefault();
       
       const { email, password } = this;
-      await this.get('session.isAuthenticated');
+      
+      try {
+        await this.session.authenticate('authenticator:credentials', email, password);
+        this.transitionToRoute('/');
+      } catch (err) {
+        this.set('errorMessage', "Email or Password is incorrect");
+      }
+      
     }
   }
 });

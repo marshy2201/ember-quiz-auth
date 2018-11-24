@@ -10,3 +10,18 @@ body,
 hr {
   background: #eee;
 }
+
+label {
+  font-weight: bold;
+}
+
+// Navbar
+
+.navbar {
+  background-color: #E04E39;
+  border-bottom: 3px solid #444;
+
+  a {
+    color: #fff;
+  }
+}

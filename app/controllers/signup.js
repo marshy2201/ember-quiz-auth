@@ -8,8 +8,7 @@ export default Controller.extend({
 
       const user = this.store.createRecord('user', {firstName, lastName, email, password});
       await user.save();
-      console.log(user);
-      //this.transitionToRoute('login');
+      this.transitionToRoute('/login');
     }
   }
 });
