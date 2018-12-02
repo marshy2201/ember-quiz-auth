@@ -1,10 +1,60 @@
-<div>
-  <label>User ID:</label> {{currentUser.user.id}}
+<div class="jumbotron jumbotron-fluid text-center">
+  <h1>Categories</h1>
+  <p class="lead">Select a category to test your knowledge.</p>
 </div>
-<div>
-  <label>Name:</label> {{currentUser.user.fullName}}
+<div class="row">
+  <div class="col-md-4 mb-3">
+    <div class="card">
+      {{#link-to "foodanddrink"}}
+        <div class="card-header p-5">
+          <div class="card-title text-center">Food &amp; Drink</div>
+        </div>
+      {{/link-to}}
+    </div>
+  </div>
+  <div class="col-md-4 mb-3">
+    <div class="card">
+      {{#link-to "filmstv"}}
+        <div class="card-header p-5">
+          <div class="card-title text-center">Films/TV</div>
+        </div>
+      {{/link-to}}
+    </div>
+  </div>
+  <div class="col-md-4 mb-3">
+    <div class="card">
+      {{#link-to "geography"}}
+        <div class="card-header p-5">
+          <div class="card-title text-center">Geography</div>
+        </div>
+      {{/link-to}}
+    </div>
+  </div>
+  <div class="col-md-4 mb-3">
+    <div class="card">
+      {{#link-to "history"}}
+        <div class="card-header p-5">
+          <div class="card-title text-center">History</div>
+        </div>
+      {{/link-to}}
+    </div>
+  </div>
+  <div class="col-md-4 mb-3">
+    <div class="card">
+      {{#link-to "science"}}
+        <div class="card-header p-5">
+          <div class="card-title text-center">Science</div>
+        </div>
+      {{/link-to}}
+    </div>
+  </div>
+  <div class="col-md-4 mb-3">
+    <div class="card">
+      {{#link-to "sport"}}
+        <div class="card-header p-5">
+          <div class="card-title text-center">Sport</div>
+        </div>
+      {{/link-to}}
+    </div>
+  </div>
 </div>
-<div>
-  <label>Email:</label> {{currentUser.user.email}}
-</div>
-
