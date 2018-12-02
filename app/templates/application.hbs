@@ -3,9 +3,9 @@
     <div class="container">
       {{link-to "Ember Quiz" "index" class="navbar-brand"}}
       <div class="text-white">
-        <span>Hello {{currentUser.user.firstName}}!</span>
+        <span data-test-eq="hello-user">Hello {{currentUser.user.firstName}}!</span>
         <span class="mx-1">|</span>
-        <a href {{action "logout"}}>Logout</a>
+        <a href data-test-eq="logout-button" {{action "logout"}}>Logout</a>
       </div>
     </div>
   </nav>
