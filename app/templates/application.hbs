@@ -1,5 +1,5 @@
 {{#if session.isAuthenticated}}
-  <nav class="navbar navbar-expand-lg navbar-dark justify-content-between mb-3">
+  <nav class="navbar navbar-expand-lg navbar-dark justify-content-between">
     <div class="container">
       {{link-to "Ember Quiz" "index" class="navbar-brand"}}
       <div class="text-white">
@@ -9,7 +9,11 @@
       </div>
     </div>
   </nav>
+  <div class="container">
+    {{outlet}}
+  </div>
+{{else}}
+  <div class="login">
+    {{outlet}}
+  </div>
 {{/if}}
-<div class="container">
-  {{outlet}}
-</div>

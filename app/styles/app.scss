@@ -1,11 +1,10 @@
 @import "ember-bootstrap/bootstrap";
 
-// General
-
-body,
-.container > .row {
-  min-height: 100vh;
+:root {
+  --secondary-color: #E04E39;
 }
+
+// General
 
 hr {
   background: #eee;
@@ -15,13 +14,54 @@ label {
   font-weight: bold;
 }
 
+// Login
+
+.login {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+
+  .card {
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+    box-shadow: 2px -2px 1px #333;
+  } 
+}
+
 // Navbar
 
 .navbar {
-  background-color: #E04E39;
+  background-color: var(--secondary-color);
   border-bottom: 3px solid #444;
 
   a {
     color: #fff;
   }
+}
+
+// Jumbotron
+
+.jumbotron {
+  h1 {
+    font-weight: 300;
+  }
+} 
+
+// Card
+.card {
+  a {
+    color: var(--secondary-color);
+    transition: .3s;
+
+    &:hover {
+      background: var(--secondary-color);
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}
+
+.card-title {
+  font-size: 1.75rem;
 }
